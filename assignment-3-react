@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Second React App</title>
+  </head>
+
+  <body>
+    <p>Bla Bla Bla</p>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="like_button.js"></script>
+    <script type="text/babel">
+     class Babbling extends React.Component {
+       render() {
+         return (
+         <div>
+           <h1>I rely on eye!</h1>
+           <h2>So do I!</h2>
+         </div>
+         );
+       }
+     }
+     ReactDOM.render(
+       <Babbling />, document.getElementById('app')
+     );
+   </script>
+  </body>
+</html>
